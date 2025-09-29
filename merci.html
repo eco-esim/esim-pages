@@ -2,10 +2,58 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Merci pour votre paiement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement réussi - EcoESIM</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #4cafef, #00c9a7);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem 3rem;
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #00a896;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .btn:hover {
+      background: #00a896;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <h1>Merci !</h1>
-  <p>Votre paiement a été reçu avec succès. Vous recevrez bientôt votre eSIM par email.</p>
+  <div class="card">
+    <h1>✅ Paiement confirmé</h1>
+    <p>Merci pour votre confiance ! Votre eSIM vous sera envoyée sous peu.</p>
+    <a class="btn" href="https://ecoesim.shop">Retour à l’accueil</a>
+  </div>
 </body>
 </html>
