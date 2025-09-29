@@ -2,10 +2,65 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Échec du paiement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement échoué - EcoESIM</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #ff5f6d, #ffc371);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 2rem 3rem;
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      max-width: 500px;
+      width: 100%;
+    }
+    .logo {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #d32f2f;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .btn:hover {
+      background: #d32f2f;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <h1>Oups !</h1>
-  <p>Le paiement a échoué ou a été annulé. Veuillez réessayer ou nous contacter si le problème persiste.</p>
+  <div class="card">
+    <img src="logo.png" alt="EcoESIM" class="logo" />
+    <h1>❌ Paiement échoué</h1>
+    <p>Le paiement a été annulé ou n’a pas abouti.<br>Merci de réessayer ou de choisir un autre moyen de paiement.</p>
+    <a class="btn" href="https://ecoesim.shop">Retour à l’accueil</a>
+  </div>
 </body>
 </html>
